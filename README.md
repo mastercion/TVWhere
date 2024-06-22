@@ -1,6 +1,6 @@
 # TVWhere - Android M8U3 TV Player
 
-TVWhere is an Android TV player designed specifically for the M8U3 platform. It allows users to configure their own channels and enjoy a customized TV viewing experience. The app is optimized for remote control navigation, ensuring a seamless user experience on TV.
+TVWhere is an Android TV player that supports any widely supported video format. It allows users to configure their own channels and enjoy a customized TV viewing experience. The app is optimized for remote control navigation, ensuring a seamless user experience on TV.
 
 ## Features
 
