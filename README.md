@@ -4,7 +4,6 @@ TVWhere is an Android TV player that supports any widely supported video format.
 
 ## Features
 
-- **Configure Your Own Channels:** Users can easily add and manage their own TV channels.
 - **Remote Control Support:** Designed to work best with TV remote controls for easy navigation.
 - **Pre-configured Channels:** The following channels are currently added and fully functional:
   - QVC
@@ -17,6 +16,7 @@ TVWhere is an Android TV player that supports any widely supported video format.
 ## To-Do List
 
 - [ ] **Add Online Editor for Channel Entries:** Implement a web-based editor to simplify channel management.
+- [ ] **Configure Your Own Channels:** Users can easily add and manage their own TV channels.
 - [ ] **Better Design:** Improve the overall UI/UX of the app.
 - [ ] **Rework Search Function:** Enhance the search functionality to provide more accurate and faster results.
 - [ ] **Add Icons to Channel Entries:** Include icons for each channel for a more intuitive and visually appealing interface.
