@@ -1,0 +1,88 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#333"
+    tools:context=".MainActivity">
+
+    <!-- Title or Heading -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:focusable="true"
+        android:text="TV Version"
+        android:textColor="@android:color/white"
+        android:textSize="14sp" />
+
+    <!-- Lottie Animation Placeholder -->
+    <FrameLayout
+        android:id="@+id/lottie_animation_container"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_below="@id/title"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="#00494949">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animationView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:lottie_rawRes="@raw/tv_lottie"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"/>
+
+    </FrameLayout>
+
+    <!-- Card Items Container -->
+    <GridLayout
+        android:id="@+id/card_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lottie_animation_container"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:alignmentMode="alignMargins"
+        android:columnCount="4"
+        android:rowCount="2"
+        android:useDefaultMargins="true">
+
+        <!-- Static Search Button -->
+        <LinearLayout
+            android:id="@+id/search_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="16dp"
+            android:background="@drawable/card_background"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@android:drawable/ic_menu_search"
+                android:tint="@android:color/white"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Search"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="8dp"/>
+        </LinearLayout>
+
+        <!-- Other dynamically added card items will go here -->
+
+    </GridLayout>
+</RelativeLayout>

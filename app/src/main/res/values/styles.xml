@@ -1,0 +1,24 @@
+<resources>
+    <!-- Other styles -->
+
+    <style name="TransparentDialog" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.7</item> <!-- Adjust dim amount as needed -->
+    </style>
+
+    <!-- Define custom text style for the ExoPlayer controls -->
+    <style name="ExoTextStyle">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!-- Define custom button style for the ExoPlayer controls -->
+    <style name="ExoButtonStyle">
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:layout_margin">4dp</item>
+    </style>
+</resources>
